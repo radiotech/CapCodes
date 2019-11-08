@@ -64,12 +64,12 @@
             }
 
             .button {
-                background-color:rgb(224, 238, 255);
+                background-color:rgb(230, 230, 230);
                 font-weight: 600;
             }
 
             .input {
-                background-color:rgb(230, 230, 230);
+                background-color:rgb(224, 238, 255);
                 color: rgb(97, 97, 255);
                 border: 2px solid blue;
             }
@@ -118,6 +118,8 @@
 
                 overflow: auto;
 
+                padding: 20px;
+
             }
 
         </style>
@@ -150,7 +152,7 @@
 
                     let b = "Tone B = "+result.type+" Code "+result.codeB+", Frequency "+result.frequencyB+" Hz";
 
-                    success(a+"<br />"+b)
+                    success("<br />"+a+"<br />"+b)
 
                 }
 
@@ -517,7 +519,9 @@
 
                 <button class="item button button2" onclick="click2();">Convert Frequencies to Cap Code</button>
 
-                <div class="item result"></div>
+                <div class="item result">
+                    <br />Please enter a Cap Code or A and B<br />frequencies in the blue boxes above and use the<br />grey convert buttons to search for corresponding<br />Cap Code and frequency values.
+                </div>
 
             </div>
         </div>
